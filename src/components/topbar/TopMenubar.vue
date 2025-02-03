@@ -9,7 +9,7 @@
       <h1 class="comfyui-logo mx-2 app-drag">ComfyUI</h1>
       <CommandMenubar />
       <div class="flex-grow min-w-0 app-drag h-full">
-        <WorkflowTabs v-if="workflowTabsPosition === 'Topbar'" />
+        <!-- <WorkflowTabs v-if="workflowTabsPosition === 'Topbar'" /> -->
       </div>
       <div class="comfyui-menu-right" ref="menuRight"></div>
       <Actionbar />
@@ -46,7 +46,6 @@ import { computed, onMounted, provide, ref } from 'vue'
 import Actionbar from '@/components/actionbar/ComfyActionbar.vue'
 import BottomPanelToggleButton from '@/components/topbar/BottomPanelToggleButton.vue'
 import CommandMenubar from '@/components/topbar/CommandMenubar.vue'
-import WorkflowTabs from '@/components/topbar/WorkflowTabs.vue'
 import { app } from '@/scripts/app'
 import { useSettingStore } from '@/stores/settingStore'
 import { useWorkspaceStore } from '@/stores/workspaceStore'

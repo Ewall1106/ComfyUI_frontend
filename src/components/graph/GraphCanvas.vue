@@ -6,9 +6,9 @@
     <LiteGraphCanvasSplitterOverlay
       v-if="comfyAppReady && betaMenuEnabled && !workspaceStore.focusMode"
     >
-      <template #side-bar-panel>
+      <!-- <template #side-bar-panel>
         <SideToolbar />
-      </template>
+      </template> -->
       <template #bottom-panel>
         <BottomPanel />
       </template>
@@ -39,7 +39,6 @@ import NodeBadge from '@/components/graph/NodeBadge.vue'
 import NodeTooltip from '@/components/graph/NodeTooltip.vue'
 import TitleEditor from '@/components/graph/TitleEditor.vue'
 import NodeSearchboxPopover from '@/components/searchbox/NodeSearchBoxPopover.vue'
-import SideToolbar from '@/components/sidebar/SideToolbar.vue'
 import SecondRowWorkflowTabs from '@/components/topbar/SecondRowWorkflowTabs.vue'
 import { CORE_SETTINGS } from '@/constants/coreSettings'
 import { useCanvasDrop } from '@/hooks/canvasDropHooks'
